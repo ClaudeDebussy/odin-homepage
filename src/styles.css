@@ -48,8 +48,7 @@ p {
 }
 
 header,
-main,
-footer {
+main {
   padding: 25px;
 }
 
@@ -100,6 +99,10 @@ header p {
   font-size: 30px;
 }
 
+main h2 {
+  margin-bottom: 20px;
+}
+
 main .projects {
   display: flex;
   flex-wrap: wrap;
@@ -121,6 +124,33 @@ main .project-card {
   align-items: center;
   margin-bottom: 5px;
   font-size: 25px;
+}
+
+footer {
+  background-color: var(--rich-mahogany);
+}
+
+footer h2,
+footer p {
+  color: var(--off-white);
+}
+
+.contact-container {
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.contact-container div {
+  margin-bottom: 25px;
+}
+
+.socials-container i {
+  font-size: 40px;
+  color: var(--off-white);
+}
+
+.socials-container i:hover {
+  color: var(--khaki-beige);
 }
 
 @media (max-width: 500px) {
