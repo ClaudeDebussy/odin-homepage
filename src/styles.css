@@ -164,7 +164,7 @@ footer p {
   color: var(--khaki-beige);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   .header-img-container h1 {
     position: absolute;
     bottom: 0;
@@ -174,5 +174,12 @@ footer p {
     font-size: 60px;
     line-height: 105%;
     text-shadow: 2px 2px 4px black;
+  }
+}
+
+@media (767px < width < 1280px) {
+  header,
+  main {
+    padding: 60px;
   }
 }
