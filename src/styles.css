@@ -51,10 +51,6 @@ p {
 header,
 main {
   padding: 25px;
-}
-
-header,
-main {
   margin-bottom: 50px;
 }
 
@@ -108,6 +104,8 @@ main h2 {
 main .projects {
   display: flex;
   flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
 }
 
 main .project-card {
@@ -165,20 +163,18 @@ footer p {
   color: var(--khaki-beige);
 }
 
-@media (max-width: 767px) {
-  .header-img-container h1 {
-    position: absolute;
-    bottom: 0;
-    padding: 10px;
+.header-img-container h1 {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
 
-    color: var(--off-white);
-    font-size: 60px;
-    line-height: 105%;
-    text-shadow: 2px 2px 4px black;
-  }
+  color: var(--off-white);
+  font-size: 60px;
+  line-height: 105%;
+  text-shadow: 2px 2px 4px black;
 }
 
-@media (767px < width < 1280px) {
+@media (768px <= width < 1280px) {
   header,
   main {
     padding: 60px;
@@ -190,6 +186,7 @@ footer p {
       var(--ink-black) 43%,
       var(--off-white) 43%
     );
+    margin-bottom: 0;
   }
 
   .header-container h1 {
@@ -220,5 +217,22 @@ footer p {
 
   .header-container h2 {
     margin-bottom: 10px;
+  }
+
+  main {
+    padding-top: 0;
+  }
+
+  main h2 {
+    text-align: left;
+  }
+
+  main .projects {
+    gap: 40px;
+    justify-content: center;
+  }
+
+  main .project-card {
+    flex: 1 1 290px;
   }
 }
