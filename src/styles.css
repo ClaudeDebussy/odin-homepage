@@ -124,7 +124,7 @@ main .project-card {
   background-color: white;
   box-shadow: 2px 5px 8px rgb(180, 179, 179);
   margin-bottom: 50px;
-  max-width: 400px;
+  max-width: auto;
 }
 
 .project-card .project-details {
@@ -317,6 +317,10 @@ footer p {
 
   .about-me .socials-container {
     justify-content: right;
+  }
+
+  main .project-card {
+    max-width: 321px;
   }
 
   footer .contact-container {
