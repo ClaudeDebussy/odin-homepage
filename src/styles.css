@@ -112,6 +112,7 @@ main .project-card {
   background-color: white;
   box-shadow: 2px 5px 8px rgb(180, 179, 179);
   margin-bottom: 50px;
+  max-width: 400px;
 }
 
 .project-card .project-details {
@@ -174,6 +175,7 @@ footer p {
   text-shadow: 2px 2px 4px black;
 }
 
+/* MOBILE */
 @media (min-width: 768px) {
   main {
     padding-top: 0;
@@ -217,6 +219,7 @@ footer p {
   }
 }
 
+/* TABLET */
 @media (768px <= width <= 1280px) {
   header,
   main {
@@ -264,7 +267,15 @@ footer p {
   }
 }
 
+/* DESKTOP */
 @media (min-width: 1280px) {
+  header .header-container,
+  main,
+  footer {
+    margin: auto;
+    padding: 0 100px;
+  }
+
   footer .contact-container {
     min-width: 35%;
   }
