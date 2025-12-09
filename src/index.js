@@ -2,7 +2,7 @@ import "./styles.css";
 import "./modern-css-reset.css";
 
 const mobileQuery = "(max-width: 767px)";
-const tabletQuery = "(min-width: 768px) and (max-width: 1280px)";
+const tabletQuery = "(min-width: 768px) and (max-width: 1279px)";
 
 const mobileMQL = window.matchMedia(mobileQuery);
 const tabletMQL = window.matchMedia(tabletQuery);
@@ -63,7 +63,7 @@ function updateHeader() {
     header.innerHTML = `
     <div class="header-img-container">
       <img
-        src="https://res.cloudinary.com/claudedebussy/image/upload/q_auto/claudedebussyportrait.webp"
+        src="https://res.cloudinary.com/claudedebussy/image/upload/ar_1:1,c_fill/q_auto/claudedebussyportrait.webp"
         alt="Portrait of Claude Debussy in sepia tone"
       />
       <h1>Claude Debussy</h1>
