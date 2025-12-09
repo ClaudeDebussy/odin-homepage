@@ -182,7 +182,7 @@ footer p {
 
   header {
     background-image: linear-gradient(
-      160deg,
+      170deg,
       var(--ink-black) 43%,
       var(--off-white) 43%
     );
@@ -193,10 +193,11 @@ footer p {
     color: var(--off-white);
     margin-bottom: 20px;
     position: relative;
-    width: 120%;
+    width: 100%;
     right: 10%;
     transform: scale(120%);
-    font-size: 50px;
+    font-size: 6vw;
+    white-space: nowrap;
   }
 
   .header-img-container {
@@ -234,5 +235,29 @@ footer p {
 
   main .project-card {
     flex: 1 1 290px;
+  }
+
+  footer {
+    display: flex;
+    padding: 30px;
+  }
+
+  footer .contact-container {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact-container .socials-container {
+    justify-content: left;
+  }
+
+  .contact-container h2 {
+    text-align: left;
+  }
+
+  footer img {
+    max-width: 50%;
   }
 }
