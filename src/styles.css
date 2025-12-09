@@ -287,3 +287,10 @@ footer p {
     object-position: 50% 20%;
   }
 }
+
+/* MINI */
+@media (max-width: 370px) {
+  header {
+    background-image: none;
+  }
+}
